@@ -1,0 +1,39 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: auto;
+  gap: 3rem;
+  width: 50%;
+  align-items: start;
+}
+
+.header {
+  width: 200px;
+  height: 30px;
+}
+
+
+.todo-list {
+  display: flex;
+  flex-direction: row;
+  width: 200px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: start;
+}
+
+.cell {
+  width: 100px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  height: 30px;
+  align-items: center;
+  display: flex;
+  padding: 5px;
+  margin: 0;
+}
+
+.todo-list div:nth-child(4n-1),
+.todo-list div:nth-child(4n-2) {
+  background-color: rgb(166, 196, 207);
+}
